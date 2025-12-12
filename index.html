@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIC Bhavishyani - Your Future Revealed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/96/000000/astrology.png">
+</head>
+<body>
+    <!-- Header with fake trust indicators -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-star-and-crescent"></i>
+                <h1>BIC Bhavishyani</h1>
+                <span class="tagline">Vedic Astrology & Future Predictions</span>
+            </div>
+            
+            <div class="trust-badges">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Secure</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-lock"></i>
+                    <span>Encrypted</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-user-check"></i>
+                    <span>Verified</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section with emotional appeal -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2><i class="fas fa-gem"></i> Discover Your Destiny</h2>
+                <h1>Unlock Ancient Secrets of Your Future</h1>
+                <p class="subtitle">Free personalized Vedic astrology reading reveals your hidden path to <span class="highlight">wealth, love, and success</span>.</p>
+                
+                <div class="urgent-message">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Limited time offer: Your planetary alignment is favorable today!</span>
+                </div>
+                
+                <div class="guarantee">
+                    <div class="guarantee-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>100% Accurate Predictions</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Based on 5,000-Year-Old Vedic Science</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Used by Celebrities & Business Leaders</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fake testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h3><i class="fas fa-users"></i> Trusted by 5,000+ Seekers Worldwide</h3>
+          
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"This reading changed my life! I followed the career advice and got job within a month."</p>
+                    <div class="user">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Rachit, BRT</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"Found my soulmate after following the relationship guidance. Truly miraculous!"</p>
+                    <div class="user">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Priya, KTM</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>The stock prediction helped me avoid a bad investment. Saved me Rs 2,00,000!</p>
+                    <div class="user">
+                        <i class="fas fa-user-circle"></i>
+                        <span>Nabin, BRT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Collection Form - The main trap -->
+    <section class="prediction-form">
+        <div class="container">
+            <div class="form-header">
+                <h2><i class="fas fa-user-astronaut"></i> Your Personal Astrology Profile</h2>
+                <p class="subtitle">Enter your birth details for a free, personalized reading. Your information is sacred and 100% confidential.</p>
+                
+                <div class="security-note">
+                    <i class="fas fa-lock"></i>
+                    <span>Your data is encrypted and protected by Vedic security protocols</span>
+                </div>
+            </div>
+            
+            <form id="astrologyForm">
+                <div class="form-section">
+                    <h3><i class="fas fa-user"></i> Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender *</label>
+                            <select id="gender" required>
+                                <option value="" selected disabled>Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" placeholder="10-digit mobile number" required>
+                            <small class="hint">For personalized SMS alerts about planetary changes</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" placeholder="Your email address" required>
+                            <small class="hint">Your free reading will be sent here</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-section">
+                    <h3><i class="fas fa-calendar-alt"></i> Birth Details (Crucial for Accuracy)</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Date of Birth *</label>
+                            <div class="date-inputs">
+                                <select id="birthDay">
+                                    <option value="" disabled selected>Day</option>
+                                    <!-- Filled by JS -->
+                                </select>
+                                <select id="birthMonth">
+                                    <option value="" disabled selected>Month</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                                <select id="birthYear">
+                                    <option value="" disabled selected>Year</option>
+                                    <!-- Filled by JS -->
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="birthTime">Time of Birth</label>
+                            <input type="time" id="birthTime">
+                            <small class="hint">For ultra-precise predictions (optional but recommended)</small>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthPlace">Place of Birth *</label>
+                        <input type="text" id="birthPlace" placeholder="City, State, Country" required>
+                        <small class="hint">Affects your planetary chart accuracy</small>
+                    </div>
+                </div>
+                
+<!-- Photo Upload Section -->
+<div class="form-section photo-upload">
+    <h3><i class="fas fa-camera"></i> Palm Reading Analysis (Optional)</h3>
+    
+    <p class="upload-instruction">
+        Upload a clear photo of your palm for advanced Vedic palmistry analysis
+    </p>
+    
+    <div class="upload-box" id="uploadArea">
+        <i class="fas fa-hand-paper"></i>
+        <p class="upload-text">Click to upload palm photo</p>
+        <p class="upload-note">OR use camera to take photo directly</p>
+        <input type="file" id="palmPhoto" accept="image/*" capture="environment">
+    </div>
+    
+    <img id="photoPreview" src="" alt="Palm preview">
+    
+    <div class="photo-actions">
+        <button type="button" class="photo-btn" id="retakeBtn" style="display:none;">
+            <i class="fas fa-redo"></i> Retake
+        </button>
+        <button type="button" class="photo-btn primary" id="analyzeBtn" style="display:none;">
+            <i class="fas fa-search"></i> Analyze Palm
+        </button>
+    </div>
+    
+    <p style="margin-top:15px; font-size:0.9rem; color:#666;">
+        <i class="fas fa-lock"></i> Your photo is encrypted and used only for palmistry analysis
+    </p>
+</div>
+
+                <div class="form-section">
+                    <h3><i class="fas fa-question-circle"></i> Additional Insights (Optional)</h3>
+                    <p class="section-note">The more you share, the more accurate your reading will be</p>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="maritalStatus">Marital Status</label>
+                            <select id="maritalStatus">
+                                <option value="" selected>Prefer not to say</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="divorced">Divorced</option>
+                                <option value="widowed">Widowed</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="profession">Profession</label>
+                            <input type="text" id="profession" placeholder="Your occupation">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>What areas concern you most?</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox">
+                                <input type="checkbox" name="concerns" value="career">
+                                <span>Career & Finance</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="concerns" value="love">
+                                <span>Love & Relationships</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="concerns" value="health">
+                                <span>Health & Wellbeing</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="concerns" value="family">
+                                <span>Family & Children</span>
+                            </label>
+                            <label class="checkbox">
+                                <input type="checkbox" name="concerns" value="spiritual">
+                                <span>Spiritual Growth</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="consent-section">
+                    <div class="consent-box">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">
+                            I agree to receive personalized astrology insights, favourable alerts, and occasional promotional messages via email and SMS. I understand that my data will be processed according to Vedic astrology principles.
+                        </label>
+                    </div>
+                    
+                    <div class="privacy-note">
+                        <i class="fas fa-info-circle"></i>
+                        <span>By submitting, you acknowledge our <a href="#" id="privacyLink">Privacy Policy</a> and consent to data processing for astrological purposes.</span>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="cta-button">
+                        <i class="fas fa-crystal-ball"></i>
+                        <span>Reveal My Free Destiny Report</span>
+                        <small>100% Free - Nothing Else Required</small>
+                    </button>
+                    
+                    <p class="urgency">
+                        <i class="fas fa-clock"></i>
+                        <span>Your planetary chart is calculated in real-time. Submit now for today's special alignment!</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Hidden tracking elements -->
+    <div id="tracking" style="display: none;">
+        <!-- IP address tracker -->
+        <iframe src="https://api.ipify.org?format=json" style="display:none"></iframe>
+        
+        <!-- Time on page tracker -->
+        <div id="timeTracker"></div>
+        
+        <!-- Mouse movement tracker -->
+        <div id="mouseTracker"></div>
+    </div>
+
+    <!-- Fake loading screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner">
+                <i class="fas fa-star-and-crescent fa-spin"></i>
+            </div>
+            <h3>Calculating Your Destiny</h3>
+            <p>Analyzing planetary positions and Vedic charts...</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="loading-stats">
+                <p><i class="fas fa-sync-alt"></i> Processing birth details...</p>
+                <p><i class="fas fa-chart-line"></i> Mapping planetary influences...</p>
+                <p><i class="fas fa-book-open"></i> Consulting ancient Vedic texts...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results screen -->
+    <div id="resultsScreen" class="results-screen">
+        <div class="results-content">
+            <div class="results-header">
+                <h2><i class="fas fa-scroll"></i> Your Destiny Report</h2>
+                <button id="closeResults" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="results-body">
+                <div class="report-section">
+                    <h3><i class="fas fa-user-circle"></i> Personal Analysis</h3>
+                    <p id="personalAnalysis">Loading...</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3><i class="fas fa-briefcase"></i> Career & Finance Forecast</h3>
+                    <p id="careerForecast">Loading...</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3><i class="fas fa-heart"></i> Love & Relationships</h3>
+                    <p id="loveForecast">Loading...</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3><i class="fas fa-heartbeat"></i> Health Insights</h3>
+                    <p id="healthInsights">Loading...</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Warning & Upcoming Challenges</h3>
+                    <p id="challenges">Loading...</p>
+                </div>
+                
+                <div class="report-section">
+                    <h3><i class="fas fa-gem"></i> Special Offer</h3>
+                    <div class="special-offer">
+                        <p>For a <strong>detailed 25-page report</strong> with personalized remedies, lucky numbers, and exact dates for important decisions:</p>
+                        <button id="premiumOffer" class="premium-btn">
+                            <i class="fas fa-crown"></i>
+                            Unlock Premium Report - Only ₹499 (Limited Time)
+                        </button>
+                        <p class="small-note">97% of users who purchased premium report reported life-changing results</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results-footer">
+                <p><i class="fas fa-info-circle"></i> <strong>Educational Note:</strong> This is a cybersecurity demonstration. Real websites use similar tactics to collect your personal data. Always check privacy policies and be cautious with sensitive information.</p>
+                <button id="viewData" class="view-data-btn">
+                    <i class="fas fa-database"></i>
+                    See What Data Was Collected
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Collection Reveal -->
+    <div id="dataReveal" class="data-reveal">
+        <div class="reveal-content">
+            <div class="reveal-header">
+                <h2><i class="fas fa-eye"></i> Behind the Scenes: Data Collection Revealed</h2>
+                <button id="closeReveal" class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="reveal-body">
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <h3>This is what REALLY happened when you submitted the form:</h3>
+                </div>
+                
+                <div class="data-list">
+                    <div class="data-item">
+                        <h4><i class="fas fa-user"></i> Personal Information Collected:</h4>
+                        <ul id="collectedPersonal"></ul>
+                    </div>
+                    
+                    <div class="data-item">
+                        <h4><i class="fas fa-map-marker-alt"></i> Location & Device Data:</h4>
+                        <ul id="collectedLocation"></ul>
+                    </div>
+                    
+                    <div class="data-item">
+                        <h4><i class="fas fa-chart-bar"></i> Behavioral Data Tracked:</h4>
+                        <ul id="collectedBehavioral"></ul>
+                    </div>
+                    
+                    <div class="data-item">
+                        <h4><i class="fas fa-shield-alt"></i> How This Data Could Be Misused:</h4>
+                        <ul>
+                            <li><strong>Identity theft</strong> using name, DOB, and location</li>
+                            <li><strong>Targeted phishing attacks</strong> using email and phone</li>
+                            <li><strong>Financial profiling</strong> based on profession and concerns</li>
+                            <li><strong>Emotional manipulation</strong> using personal worries</li>
+                            <li><strong>Building detailed profiles</strong> for resale to advertisers</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="security-tips">
+                    <h3><i class="fas fa-lightbulb"></i> Cybersecurity Tips:</h3>
+                    <ol>
+                        <li>Always check privacy policies before submitting personal data</li>
+                        <li>Be skeptical of "free" offers that require extensive personal information</li>
+                        <li>Use unique passwords for different websites</li>
+                        <li>Enable two-factor authentication where available</li>
+                        <li>Regularly check your email and phone number on data breach databases</li>
+                    </ol>
+                </div>
+                
+                <div class="action-buttons">
+                    <a href="admin-panel.html" class="admin-link">
+                        <i class="fas fa-user-secret"></i>
+                        View Admin Panel (See All Collected Data)
+                    </a>
+                    <button id="resetDemo" class="reset-btn">
+                        <i class="fas fa-redo"></i>
+                        Reset Demonstration
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with fake credentials -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-star-and-crescent"></i> Bhavishyani</h4>
+                    <p>Ancient Vedic Wisdom meets Modern Technology for accurate future predictions.</p>
+                    <div class="certificates">
+                        <div class="certificate">
+                            <i class="fas fa-award"></i>
+                            <span>Certified Vedic Astrologers</span>
+                        </div>
+                        <div class="certificate">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>GDPR Compliant</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> support@bic_bhavishyani.com</p>
+                    <p><i class="fas fa-phone"></i> 0214456979</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms of Service</a></p>
+                    <p><a href="#">Disclaimer</a></p>
+                </div>
+            </div>
+            
+            <div class="educational-disclaimer">
+                <i class="fas fa-graduation-cap"></i>
+                <p><strong>EDUCATIONAL DEMONSTRATION:</strong> This website is created for cybersecurity awareness education. It demonstrates how personal data can be collected through seemingly harmless services. No actual personal data is transmitted to external servers. All data is stored locally in the browser for educational purposes only.</p>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2025 BIC Bhavishyani - Cybersecurity Awareness Project | Made for educational purposes - Yunik Bhattarai</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

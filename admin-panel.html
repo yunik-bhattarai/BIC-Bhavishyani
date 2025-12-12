@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhavishyani - Admin Panel</title>
+    <link rel="stylesheet" href="admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="admin-title">
+                <h1><i class="fas fa-user-secret"></i> Bhavishyani - Data Collection Dashboard</h1>
+                <p class="subtitle">Educational Cybersecurity Demonstration - Admin Panel</p>
+            </div>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i> Back to Main Site
+            </a>
+        </header>
+        
+        <div class="admin-warning">
+            <i class="fas fa-exclamation-triangle"></i>
+            <p><strong>EDUCATIONAL PURPOSE ONLY:</strong> This panel demonstrates what malicious actors could see if they collected your data. In reality, this data would be stored on servers and potentially sold or misused.</p>
+        </div>
+        
+        <div class="dashboard">
+            <div class="stats-cards">
+                <div class="stat-card">
+                    <h3><i class="fas fa-users"></i> Total Submissions</h3>
+                    <p id="totalSubmissions">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-envelope"></i> Email Addresses</h3>
+                    <p id="totalEmails">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-phone"></i> Phone Numbers</h3>
+                    <p id="totalPhones">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3><i class="fas fa-birthday-cake"></i> Birth Dates</h3>
+                    <p id="totalBirthdays">0</p>
+                </div>
+            </div>
+            
+            <div class="data-section">
+                <h2><i class="fas fa-database"></i> Collected User Data</h2>
+                <div class="controls">
+                    <button id="exportData" class="btn">
+                        <i class="fas fa-download"></i> Export as JSON
+                    </button>
+                    <button id="clearData" class="btn btn-danger">
+                        <i class="fas fa-trash"></i> Clear All Data
+                    </button>
+                    <button id="simulateHack" class="btn btn-warning">
+                        <i class="fas fa-bug"></i> Simulate Data Breach
+                    </button>
+                </div>
+                
+                <div class="data-table-container">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Birth Date</th>
+                                <th>Location</th>
+                                <th>Profession</th>
+                                <th>Time</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="dataTableBody">
+                            <!-- Data will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="insights-section">
+                <h2><i class="fas fa-chart-bar"></i> Data Insights & Patterns</h2>
+                <div class="insights-grid">
+                    <div class="insight-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Common Locations</h3>
+                        <ul id="commonLocations"></ul>
+                    </div>
+                    <div class="insight-card">
+                        <h3><i class="fas fa-briefcase"></i> Professions Analysis</h3>
+                        <ul id="professionsList"></ul>
+                    </div>
+                    <div class="insight-card">
+                        <h3><i class="fas fa-heart"></i> User Concerns</h3>
+                        <ul id="concernsList"></ul>
+                    </div>
+                    <div class="insight-card">
+                        <h3><i class="fas fa-calendar"></i> Age Distribution</h3>
+                        <ul id="ageDistribution"></ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="security-lesson">
+                <h2><i class="fas fa-shield-alt"></i> Cybersecurity Lesson</h2>
+                <div class="lesson-content">
+                    <div class="lesson-point">
+                        <h3><i class="fas fa-exclamation-circle"></i> What Just Happened?</h3>
+                        <p>This demo collected: <strong>Personal identification, contact information, birth details, location data, professional information, behavioral patterns, and device fingerprints.</strong></p>
+                    </div>
+                    
+                    <div class="lesson-point">
+                        <h3><i class="fas fa-user-shield"></i> Real-World Risks</h3>
+                        <ul>
+                            <li><strong>Identity Theft:</strong> Name + DOB + location = identity theft risk</li>
+                            <li><strong>Phishing:</strong> Email + name = targeted phishing campaigns</li>
+                            <li><strong>Financial Fraud:</strong> Profession + concerns = financial profiling</li>
+                            <li><strong>Emotional Manipulation:</strong> Personal concerns = targeted manipulation</li>
+                            <li><strong>Data Resale:</strong> All data = valuable commodity on dark web</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="lesson-point">
+                        <h3><i class="fas fa-check-circle"></i> Protective Measures</h3>
+                        <ol>
+                            <li>Use unique passwords for every website</li>
+                            <li>Enable two-factor authentication (2FA)</li>
+                            <li>Check privacy policies before submitting data</li>
+                            <li>Use a VPN for sensitive browsing</li>
+                            <li>Regularly monitor your digital footprint</li>
+                            <li>Be skeptical of "free" offers requiring personal data</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="admin-footer">
+            <p><i class="fas fa-graduation-cap"></i> <strong>Educational Project:</strong> This demonstration shows how easily personal data can be collected. Always be cautious online.</p>
+            <p class="copyright">© 2024 Bhavishyani Cybersecurity Awareness Project</p>
+        </footer>
+    </div>
+    
+    <!-- Data Detail Modal -->
+    <div id="detailModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-id-card"></i> Complete User Profile</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Data will be inserted here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="admin-script.js"></script>
+</body>
+</html>
