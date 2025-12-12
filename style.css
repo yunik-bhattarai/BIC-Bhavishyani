@@ -92,7 +92,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(26, 26, 46, 0.9)),
+    background: linear-gradient(rgba(26, 26, 46, 0.6), rgba(26, 26, 46, 0.9)),
                 url('https://bicnepal.edu.np/images/homepage/hero__banner/building.png');
     background-size: cover;
     background-position: center;
@@ -933,6 +933,22 @@ form {
     font-weight: bold;
     letter-spacing: 1px;
 }
+
+/* Change footer link colors */
+.footer-section a {
+    color: white; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: white; 
+    text-decoration: underline;
+}
+
+.footer-section a:hover {
+    color: var(--star-color); 
+} */
 
 .premium-btn {
     background: linear-gradient(135deg, #FFD700, var(--secondary));
